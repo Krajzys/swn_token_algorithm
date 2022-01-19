@@ -2,6 +2,7 @@ MSG_UND = 0 # Undefined
 MSG_ACK = 1 # Acknowledge
 MSG_TOK = 2 # Ordinary token
 MSG_REC = 3 # Recovery token
+MSG_RCK = 4 # Recovery ack
 
 class Message:
     def __init__(self):
