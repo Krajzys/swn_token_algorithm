@@ -8,7 +8,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-l', '--log', type=str, help="Specifies file to which logs should be saved", required=False)
     parser.add_argument('--no-acks', action="store_true", help="Specifies that no acks should be accepted", required=False)
-    parser.add_argument('-s', '--success-rate', type=float, help="Specifies the chance that the message won't be sent", required=False)
+    parser.add_argument('-s', '--success-rate', type=float, help="Specifies the chance that the message will be sent. 0.9 is 90%% etc.", required=False)
 
     args = parser.parse_args()
 
